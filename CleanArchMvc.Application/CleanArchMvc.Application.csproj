@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CleanArchMvcDomain\CleanArchMvc.Domain.csproj" />
+    <ProjectReference Include="..\CleanArchMvc.Domain\CleanArchMvc.Domain.csproj" />
   </ItemGroup>
 
 </Project>
