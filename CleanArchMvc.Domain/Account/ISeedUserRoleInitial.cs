@@ -2,7 +2,7 @@
 {
     public interface ISeedUserRoleInitial
     {
-        void SeedUser();
+        void SeedUsers();
         void SeedRoles();
     }
 }
