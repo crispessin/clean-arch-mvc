@@ -2,8 +2,8 @@
 {
     public interface IAuthenticate
     {
-        Task<bool> Authenticate(string username, string password);
-        Task<bool> RegisterUser(string username, string password);
-        Task<bool> Logout();
+        Task<bool> Authenticate(string email, string password);
+        Task<bool> RegisterUser(string email, string password);
+        Task Logout();
     }
 }
