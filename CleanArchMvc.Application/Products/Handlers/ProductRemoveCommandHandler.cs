@@ -26,7 +26,7 @@ namespace CleanArchMvc.Application.Products.Handlers
             else
             {
                 var result = await _productRepository.RemoveAsync(product);
-                return await _productRepository.UpdateAsync(product);
+                return result;
             }
         }
     }
