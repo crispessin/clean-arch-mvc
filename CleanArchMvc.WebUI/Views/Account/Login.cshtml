@@ -6,6 +6,11 @@
     <div class="col-md-10">
 
         <form asp-controller="Account" asp-action="Login" method="post" class="form-horizontal">
+            <style>
+                .form-group {
+                    margin-bottom: 20px;
+                }
+            </style>
 
             <input type="hidden" asp-for="ReturnUrl" />
 

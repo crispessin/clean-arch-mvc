@@ -29,14 +29,14 @@ namespace CleanArchMvc.Infra.IoC
             services.ConfigureApplicationCookie(options =>
                  options.AccessDeniedPath = "/Account/Login");
 
-            services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<ICategoryService, CategoryService>();
 
             services.AddScoped<IAuthenticate, AuthenticateService>();
             services.AddScoped<ISeedUserRoleInitial, SeedUserRoleInitial>();
 
-            services.AddScoped<IProductService, ProductService>();
-            services.AddScoped<ICategoryService, CategoryService>();
             services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
 
             var myhandlers = AppDomain.CurrentDomain.Load("CleanArchMvc.Application");
