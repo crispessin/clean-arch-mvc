@@ -37,6 +37,7 @@ namespace CleanArchMvc.Infra.IoC
 
             var myhandlers = AppDomain.CurrentDomain.Load("CleanArchMvc.Application");
             services.AddMediatR(myhandlers);
+            //services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(myhandlers));
 
             return services;
         }
