@@ -20,6 +20,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens
 		docker-compose.yml = docker-compose.yml
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchMvc.API", "CleanArchMvc.API\CleanArchMvc.API.csproj", "{733B3D0E-F4A7-4F81-9FD4-579BC0478DFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,10 @@ Global
 		{97F3C0CD-01E2-4E3E-A7CD-2A629D21ADAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97F3C0CD-01E2-4E3E-A7CD-2A629D21ADAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97F3C0CD-01E2-4E3E-A7CD-2A629D21ADAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{733B3D0E-F4A7-4F81-9FD4-579BC0478DFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{733B3D0E-F4A7-4F81-9FD4-579BC0478DFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{733B3D0E-F4A7-4F81-9FD4-579BC0478DFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{733B3D0E-F4A7-4F81-9FD4-579BC0478DFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
