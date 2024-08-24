@@ -1,11 +1,13 @@
 ﻿using CleanArchMvc.Application.DTOs;
 using CleanArchMvc.Application.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CleanArchMvc.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CategoriesController : ControllerBase
     {
         private readonly ICategoryService _categoryService;
@@ -25,6 +27,12 @@ namespace CleanArchMvc.API.Controllers
             }
             return Ok(categories);
         }
+
+        /// <summary>
+        /// Localiza uma categoria específica pelo Id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
 
         [HttpGet("{id:int}", Name = "GetCategory")]
         public async Task<ActionResult<CategoryDTO>> Get(int id)
@@ -61,6 +69,12 @@ namespace CleanArchMvc.API.Controllers
 
             return Ok(categoryDTO);    
         }
+
+        /// <summary>
+        /// Deleta uma categoria específica
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
 
         [HttpDelete("{id:int}")]
         public async Task<ActionResult<CategoryDTO>> Delete(int id)
