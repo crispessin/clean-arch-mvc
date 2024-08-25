@@ -1,4 +1,4 @@
-﻿using CleanArchMvc.Domain.Entites;
+﻿using CleanArchMvc.Domain.Entities;
 
 namespace CleanArchMvc.Domain.Interfaces
 {

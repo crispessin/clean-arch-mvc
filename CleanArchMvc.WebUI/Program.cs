@@ -1,6 +1,5 @@
-using CleanArchMvc.Infra.Data.Identity;
-using CleanArchMvc.Infra.IoC;
 using CleanArchMvc.Domain.Account;
+using CleanArchMvc.Infra.IoC;
 
 var builder = WebApplication.CreateBuilder(args);
 

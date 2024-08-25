@@ -1,6 +1,5 @@
 using CleanArchMvc.Domain.Entities;
 using FluentAssertions;
-using Xunit;
 
 namespace CleanArchMvc.Domain.Tests;
 
@@ -11,7 +10,7 @@ public class CategoryUnitTest1
     {
         Action action = () => new Category(1, "Category Name ");
         action.Should()
-             .NotThrow<CleanArchMvc.Domain.Validation.DomainExceptionValidation>();
+             .NotThrow<Validation.DomainExceptionValidation>();
     }
 
     [Fact]
@@ -19,7 +18,7 @@ public class CategoryUnitTest1
     {
         Action action = () => new Category(-1, "Category Name ");
         action.Should()
-            .Throw<CleanArchMvc.Domain.Validation.DomainExceptionValidation>()
+            .Throw<Validation.DomainExceptionValidation>()
              .WithMessage("Invalid Id value.");
     }
 
@@ -28,8 +27,8 @@ public class CategoryUnitTest1
     {
         Action action = () => new Category(1, "Ca");
         action.Should()
-            .Throw<CleanArchMvc.Domain.Validation.DomainExceptionValidation>()
-               .WithMessage("Invalid name, too short, minimum 3 characters");
+            .Throw<Validation.DomainExceptionValidation>()
+               .WithMessage("Invalid name, too short, minimum 3 characters.");
     }
 
     [Fact]
@@ -37,8 +36,8 @@ public class CategoryUnitTest1
     {
         Action action = () => new Category(1, "");
         action.Should()
-            .Throw<CleanArchMvc.Domain.Validation.DomainExceptionValidation>()
-            .WithMessage("Invalid name.Name is required");
+            .Throw<Validation.DomainExceptionValidation>()
+            .WithMessage("Invalid name. Name is reqired.");
     }
 
     [Fact]
@@ -46,6 +45,6 @@ public class CategoryUnitTest1
     {
         Action action = () => new Category(1, null);
         action.Should()
-            .Throw<CleanArchMvc.Domain.Validation.DomainExceptionValidation>();
+            .Throw<Validation.DomainExceptionValidation>();
     }
 }

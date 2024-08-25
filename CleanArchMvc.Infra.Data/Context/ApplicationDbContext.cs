@@ -1,4 +1,4 @@
-﻿using CleanArchMvc.Domain.Entites;
+﻿using CleanArchMvc.Domain.Entities;
 using CleanArchMvc.Infra.Data.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
