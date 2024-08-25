@@ -1,4 +1,4 @@
-﻿using CleanArchMvc.Domain.Entites;
+﻿using CleanArchMvc.Domain.Entities;
 using CleanArchMvc.Domain.Interfaces;
 using CleanArchMvc.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;

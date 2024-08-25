@@ -1,7 +1,6 @@
-﻿using CleanArchMvc.Domain.Entities;
-using CleanArchMvc.Domain.Validation;
+﻿using CleanArchMvc.Domain.Validation;
 
-namespace CleanArchMvc.Domain.Entites
+namespace CleanArchMvc.Domain.Entities
 {
     public sealed class Product : Entity
     {
